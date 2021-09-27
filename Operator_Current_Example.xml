@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Users/richa/Desktop/MTconnect%20Test/styles/Streams.xsl"?>
+<MTConnectStreams xmlns="urn:mtconnect.org:MTConnectStreams:1.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectStreams:1.7 http://schemas.mtconnect.org/schemas/MTConnectStreams_1.7.xsd">
+	<Header creationTime="2021-09-20T21:15:42Z" sender="CCAM_OperatorAgent" instanceId="001" version="1.3.0.17" bufferSize="131072" nextSequence="4397954" firstSequence="4266882" lastSequence="4397953" deviceModelChangeTime="2001-12-17T09:30:47Z"/>
+	<Streams>
+		<DeviceStream name="default" uuid="CCAM_Operator">
+			<ComponentStream component="Controller" name="controller" componentId="controller">
+				<Samples>
+					<AccumulatedTime dataItemId="Up_Time" timestamp="2021-09-20T20:31:31.1950466Z" sequence="4373365">UNAVAILABLE</AccumulatedTime>
+					<ClockTime dataItemId="Machine_Clock" timestamp="2001-12-17T09:30:47Z" sequence="1">3.141590118408203125</ClockTime>
+				</Samples>
+				<Events>
+					<SerialNumber dataItemId="Machine_SerialNumber" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</SerialNumber>
+					<Execution dataItemId="Program_State" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</Execution>
+					<WaitState dataItemId="WaitState" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</WaitState>
+					<Message dataItemId="Message_To_Operator" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</Message>
+				</Events>
+			</ComponentStream>
+			<ComponentStream component="Device" name="default" componentId="dev">
+				<Events>
+					<Availability dataItemId="avail" timestamp="2021-09-13T18:12:23.036373Z" sequence="106">AVAILABLE</Availability>
+					<AssetChanged dataItemId="dev_asset_chg" timestamp="2021-09-13T18:12:10.635664Z" sequence="37" assetType="">UNAVAILABLE</AssetChanged>
+					<AssetRemoved dataItemId="dev_asset_rem" timestamp="2021-09-13T18:12:10.635664Z" sequence="38" assetType="">UNAVAILABLE</AssetRemoved>
+				</Events>
+			</ComponentStream>
+			<ComponentStream name="PartOccurrence" componentId="PartOccurrence" component="PartOccurrence">
+				<Events>
+					<PartId dataItemId="PartId_MongoID" timestamp="2001-12-17T09:30:47Z" sequence="1"/>
+					<ProcessOccurrenceId dataItemId="ProcessOccurrenceId" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</ProcessOccurrenceId>
+					<PartUniqueId dataItemId="PartUniqueId_UUID" subType="SERIAL_NUMBER" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</PartUniqueId>
+					<PartGroupId dataItemId="PartGroupId" subType="LOT" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</PartGroupId>
+					<PartKindId dataItemId="PartKindId_PartNumber" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</PartKindId>
+					<PartKindId dataItemId="PartKindId_PartDescription" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</PartKindId>
+					<PartCount dataItemId="PartCount" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</PartCount>
+					<PartProcessingState dataItemId="PartProcessingState" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</PartProcessingState>
+					<PartStatus dataItemId="PartStatus" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</PartStatus>
+				</Events>
+			</ComponentStream>
+			<ComponentStream name="ProcessOccurrence" componentId="ProcessOccurrence" component="ProcessOccurrence">
+				<Events>
+					<ProcessOccurrenceId dataItemId="ProcessOccurrenceId" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</ProcessOccurrenceId>
+					<PartUniqueId dataItemId="PartUniqueId_UUID" subType="SERIAL_NUMBER" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</PartUniqueId>
+					<ProcessAggregateId dataItemId="ProcessAggregateId_WO_UUID" subType="UUID" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</ProcessAggregateId>
+					<ProcessAggregateId dataItemId="ProcessAggregateId_WO_MongoID" subType="UUID" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</ProcessAggregateId>
+					<ProcessAggregateId dataItemId="ProcessAggregateId_WO_Step" subType="PROCESS_STEP" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</ProcessAggregateId>
+					<ProcessKindId dataItemId="ProcessKindId_JobDef_UUID" subType="UUID" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</ProcessKindId>
+					<ProcessKindId dataItemId="ProcessKindId_JobDef_MongoID" subType="UUID" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</ProcessKindId>
+					<ProcessKindId dataItemId="ProcessKindId_JobDef_Name" subType="PROCESS_NAME" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</ProcessKindId>
+					<ProcessState dataItemId="ProcessState" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</ProcessState>
+					<ProcessTime dataItemId="ProcessTime_Start" timestamp="2001-12-17T09:30:47Z" sequence="1" subType="START">UNAVAILABLE</ProcessTime>
+					<ProcessTime dataItemId="ProcessTime_Complete" timestamp="2001-12-17T09:30:47Z" sequence="1" subType="COMPLETE">UNAVAILABLE</ProcessTime>
+					<Program dataItemId="Program_JobDef_Main" timestamp="2001-12-17T09:30:47Z" sequence="1" subType="MAIN">UNAVAILABLE</Program>
+					<User dataItemId="User_Active" timestamp="2001-12-17T09:30:47Z" sequence="1">UNAVAILABLE</User>
+				</Events>
+			</ComponentStream>
+		</DeviceStream>
+	</Streams>
+</MTConnectStreams>
