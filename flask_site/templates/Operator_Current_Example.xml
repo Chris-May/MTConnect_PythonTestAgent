@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="file:///C:/Users/richa/Desktop/MTconnect%20Test/styles/Streams.xsl"?>
+<?xml-stylesheet type="text/xsl" href="styles\Streams.xsl"?>
 <MTConnectStreams xmlns="urn:mtconnect.org:MTConnectStreams:1.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectStreams:1.7 http://schemas.mtconnect.org/schemas/MTConnectStreams_1.7.xsd">
 	<Header creationTime="2021-09-20T21:15:42Z" sender="CCAM_OperatorAgent" instanceId="001" version="1.3.0.17" bufferSize="131072" nextSequence="4397954" firstSequence="4266882" lastSequence="4397953" deviceModelChangeTime="2001-12-17T09:30:47Z"/>
 	<Streams>
