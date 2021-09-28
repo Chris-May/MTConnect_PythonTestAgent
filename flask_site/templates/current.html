@@ -1,9 +1,39 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Current</h1>
+  <h1>Current thinger</h1>
 
-    <xml id='xmldata' style='styles\Streams.xsl'>
-        {% include 'Operator_Current_Example.xml' %}
-    </xml>
+  <ul>
+    <li>Creation time: {{ creation_time }}</li>
+  </ul>
+  <hr>
+  {% for c in components %}
+    <h2>Device: {{ c.attrib['name'] }}</h2>
+    <h3>Events:</h3>
+    <table>
+      <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Type</th>
+        <th>Sub Type</th>
+        <th>Sequence</th>
+        <th>Value</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for event in c.find('x:Events', ns) %}
+        <tr>
+          <td>{{ event.attrib.get('timestamp') }}</td>
+          <td>{{ event.tag.replace('{urn:mtconnect.org:MTConnectStreams:1.7}', '') }}</td>
+          <td>{{ event.attrib.get('subType') }}</td>
+          <td>{{ event.attrib.get('sequence') }}</td>
+          <td>{{ event.text }}</td>
+        </tr>
+      {% endfor %}
+
+      </tbody>
+    </table>
+    <hr>
+  {% endfor %}
+
 
 {% endblock content %}
