@@ -2,6 +2,8 @@
 {% block content %}
     <h1>Current</h1>
 
-    {% include 'Operator_Current_Example.xml' %}
+    <xml id='xmldata' style='styles\Streams.xsl'>
+        {% include 'Operator_Current_Example.xml' %}
+    </xml>
 
 {% endblock content %}
